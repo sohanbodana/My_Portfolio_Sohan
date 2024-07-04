@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-scroll';
 import fl from './lg.png';
 import './Nav.css';  // Import the CSS file
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const Nav = () => {
   return (
