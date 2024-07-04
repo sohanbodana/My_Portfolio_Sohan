@@ -1,0 +1,304 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: solid black;
+  font-family: 'Inconsolata', serif;
+  
+}
+
+
+.self {
+  font-size: 30px;
+  font-weight: 400;
+  text-shadow: 4px 4px 4px #aaa;
+}
+
+.mtd{
+  margin-top: 20%;
+}
+/* project-section */
+
+.project-section {
+  width: 100%;
+  height: 50%;
+  padding: 2px 100px 10px;
+  /* padding: 150px 100px 100px; */
+}
+
+.project-heading {
+  font-size: 60px;
+  text-align: center;
+  color: #1a1a1a;
+
+}
+
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 100px;
+}
+
+.project-card {
+  width: 80%;
+  /* height: 80%; */
+
+}
+
+.project-img {
+  width: 40%;
+  height: 40%;
+
+}
+
+.project-title {
+  padding-left: 0%;
+  font-size: 30px;
+  text-transform: capitalize;
+  /* text-align: center; */
+  font-weight: 300;
+}
+
+/* .project-info{
+
+} */
+
+.project-btn-grp {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+
+}
+
+.project-btn {
+  height: 40px;
+  margin: 2px auto;
+  padding: 5px;
+  border-radius: 5px;
+  text-transform: capitalize;
+  font-size: 18px;
+  /* border: none; */
+  /* background: #1f29bdba;*/
+  color: #fff; 
+  background-image: linear-gradient(120deg, #232834 0%, #648dfc 100%);
+  cursor: pointer;
+}
+
+/* skill css */
+.heading{
+  text-align: center;
+  font-size: 30px;
+  font-weight: 500;
+  background-image: linear-gradient(120deg, #c76dff 0%, #f68084 100%);
+
+}
+.skills-container {
+  display: grid;
+  gap:2%;
+}
+
+
+.skill-card {
+  font-size: small;
+  padding: 10px;
+  margin:10px;
+  margin-left: 30%;
+  border:2px solid rgb(235, 144, 144);
+  border-radius: 20px;
+  width: 50%;
+  height: 89%;
+  background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+  box-shadow: 2px 5px 4px;
+}
+.skill-name{
+font-size:large;
+}
+.skill-info{
+  
+/* text-size-adjust: auto; */
+}
+.skill-level{
+font: bold;
+text-align: center;
+font-size:large;
+}
+.skill-img{
+
+}
+
+/* ////........About Me........//// */
+
+.about-me {
+  background-color: #07374a;
+  padding: 6rem 0;
+  
+}
+
+.about-heading {
+  color: #25b79f;
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center; 
+}
+
+ img{
+  height: 200px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: inline;
+  vertical-align: middle;
+
+}
+
+.about-content p {
+  font-size: 1.2rem;
+  color: #000000;
+  padding: 0 2.3rem;
+  text-align: center;
+}
+
+/* ///////// */
+.about-me .about-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.left-content {
+  text-align: center;
+  
+}
+
+/* ////......Contact......///// */
+
+.contact {
+  background: #07374a;
+  position: relative;
+  height: 50vh;
+}
+
+.contact-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.contact-content h2 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #25b79f;
+  padding-bottom: 0.5rem;
+}
+
+.contact-content .mail {
+  color: #f0f0e6;
+  padding-bottom: 0.2rem;
+  font-size: 1rem;
+}
+
+.contact-content .links {
+  color: #25b79f;
+  padding: 0.5rem;
+  padding-bottom: 1.8rem;
+  font-size: 1rem;
+}
+
+.contact-content a {
+  text-decoration: none;
+  color: #25b79f;
+  padding: 0.3rem;
+  transition: 0.3s ease-in-out;
+}
+
+.contact-content a:hover{
+  color: #f0f0e6;
+}
+
+
+/* Mobile Styles */
+
+@media (max-width: 639px) {
+/* Add your mobile-specific styles here */
+/* For example: */
+body{
+  background-color: red;
+}
+.project-heading {
+  font-size: 2px;
+  height: 10vh;
+
+} 
+
+.project-info{
+  font-size: small;
+  display: none;
+  visibility: hidden;
+}
+
+
+
+.project-title {
+font-size: 20px;
+}
+
+.skill-section{
+display: none;
+visibility: hidden;
+}
+
+
+.contact{
+height: 30vh;
+
+}
+.contact-content{
+padding: 20px;
+}
+
+}
+
+/* Tablet Styles */
+@media (min-width: 640px) and (max-width: 1023px) {
+/* Add your tablet-specific styles here */
+/* For example: */
+
+.about-heading {
+  font-size: 32px;
+}
+
+.project-heading {
+  font-size: 36px;
+}
+
+.skill-name {
+  font-size: 22px;
+}
+.skill-section{
+  display: none;
+  visibility: hidden;
+}
+
+}
+
+/* Desktop Styles */
+@media (min-width: 1024px) {
+
+
+.about-heading {
+  font-size: 40px;
+}
+
+.project-heading {
+  font-size: 48px;
+}
+
+.skill-name {
+  font-size: 26px;
+}
+} 
+
+
+
+

@@ -1,0 +1,74 @@
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+.sohan{
+  font-family: 'Inconsolata', serif;
+  font-size: 30px;
+  font-weight: 400;
+  text-shadow: 4px 4px 4px #aaa;  
+}
+
+.logo {
+  width: 48px;
+  height: 48px;
+  margin-right: 12px;
+}
+
+.brand-text {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item {
+  margin: 0.5rem 0;
+}
+
+.nav-link {
+  padding: 0.5rem 1rem;
+  color: #343a40;
+  text-decoration: none;
+}
+
+.nav-link:hover, .nav-link:focus {
+  background-color: #e9ecef;
+  border-radius: 0.25rem;
+}
+
+@media (min-width: 768px) {
+  .navbar-nav {
+    flex-direction: row;
+    margin-left: auto;
+  }
+
+  .nav-item {
+    margin: 0 0.5rem;
+  }
+
+  .nav-link {
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .navbar-light {
+    background-color: #343a40 !important;
+  }
+
+  .nav-link {
+    color: #ffffff;
+  }
+
+  .nav-link:hover, .nav-link:focus {
+    background-color: #495057;
+  }
+}

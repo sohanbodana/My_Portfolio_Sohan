@@ -1,0 +1,323 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inconsolata', serif;
+  font-weight: 400;
+}
+
+.github {
+  background: #0575E6;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #081852, #0575E6);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #021B79, #0575E6);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+h1,
+h2 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.centers {
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* About Section */
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 0;
+  padding: 20px;
+}
+
+.left-content {
+  text-align: center;
+}
+
+.about-heading {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.img1 {
+  width: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.work-arrow {
+  margin-top: 20px;
+}
+
+.work-arrow a {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.work-arrow a:hover {
+  text-decoration: underline;
+}
+
+/* Project Section */
+.project-section {
+  margin: 50px 0;
+}
+
+.project-heading {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.project-container {
+  display: grid 3;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.project-img {
+  width: 100%;
+  height: auto;
+}
+
+.project-content {
+  padding: 20px;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.project-info {
+  margin-bottom: 20px;
+}
+
+.project-btn-grp {
+  text-align: center;
+}
+
+.project-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.project-btn:hover {
+  background-color: #0056b3;
+}
+
+/* ////......Contact......///// */
+
+.contact {
+  background: #07374a;
+  position: relative;
+  height: 50vh;
+}
+
+.contact-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.contact-content h2 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #25b79f;
+  padding-bottom: 0.5rem;
+}
+
+.contact-content .mail {
+  color: #f0f0e6;
+  padding-bottom: 0.2rem;
+  font-size: 1rem;
+}
+
+.contact-content .links {
+  color: #25b79f;
+  padding: 0.5rem;
+  padding-bottom: 1.8rem;
+  font-size: 1rem;
+}
+
+.contact-content a {
+  text-decoration: none;
+  color: #25b79f;
+  padding: 0.3rem;
+  transition: 0.3s ease-in-out;
+}
+
+.contact-content a:hover {
+  color: #f0f0e6;
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+  .about-content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .left-content {
+    text-align: left;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .project-container,
+  .skills-container {
+    grid-template-columns: 1fr;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+  }
+
+  .nav-item {
+    margin: 0;
+  }
+}
+
+
+/* //////////////////////////// */
+
+
+/* Progress Section */
+
+.heading {
+  margin: 0;
+  padding: 0;
+}
+
+.skill-section {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.skill-section .heading {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.skills-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.progress {
+  background-color: #e9ecef;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
+.skills-content .progress-bar {
+  width: 0;
+  animation: progressAnimation 2s ease forwards;
+}
+
+.progress-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: width 0.6s ease;
+
+}
+
+.skill {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 10px;
+
+}
+
+.val {
+  margin-left: 10px;
+}
+
+.bg-success {
+  background-color: #28a745;
+}
+
+.bg-info {
+  background-color: #17a2b8;
+}
+
+.bg-warning {
+  background-color: #ffc107;
+}
+
+.bg-danger {
+  background-color: #dc3545;
+}
+
+.a1 {
+  background-color: #17a2b8;
+}
+
+.a2 {
+  background-color: #5b1414;
+}
+
+.a3 {
+  background-color: #dc3545;
+}
+
+.a4 {
+  background-color: blueviolet;
+}
+
+.a5 {
+  background-color: rgb(42, 128, 128);
+}
+
+.a6 {
+  background-color: #0056b3;
+}
+
+
+@keyframes progressAnimation {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: var(--progress-width);
+  }
+}
